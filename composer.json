@@ -1,0 +1,40 @@
+{
+    "name": "ivan-petrunko/image-library",
+    "description": "PHP image library.",
+    "keywords": [
+        "php",
+        "image",
+        "library"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Petrunko",
+            "email": "ivan@petrunko.com",
+            "homepage": "https://petrunko.com/"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "ext-fileinfo": "*",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Petrunko\\Image\\": "src/Petrunko/Image/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Petrunko\\Image\\": "tests/Petrunko/Image/"
+        }
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    }
+}
