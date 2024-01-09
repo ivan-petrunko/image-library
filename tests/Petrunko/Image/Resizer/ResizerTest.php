@@ -49,7 +49,7 @@ class ResizerTest extends TestCase
         unlink($destFilePath);
     }
 
-    public function resizeProvider(): \Generator
+    public static function resizeProvider(): \Generator
     {
         yield [
             __DIR__ . '/../../../stubs/1.jpg',

@@ -34,7 +34,7 @@ class FillCalculatorTest extends TestCase
         self::assertEquals($expected, $actual);
     }
 
-    public function calculateProvider(): \Generator
+    public static function calculateProvider(): \Generator
     {
         yield [
             new Size(1200, 913), // source

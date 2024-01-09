@@ -34,7 +34,7 @@ class FitCalculatorTest extends TestCase
         self::assertEquals($expected, $actual);
     }
 
-    public function calculateProvider(): \Generator
+    public static function calculateProvider(): \Generator
     {
         yield [
             new Size(1024, 768), // source
